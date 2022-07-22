@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script !src="">
+    // var nextPermutation = function (nums) {
+    //     let len = nums.length;
+    //     let i = len - 2;
+    //     let j = len - 1;
+    //     while (nums[i] > nums[j] && j) {
+    //         i--;
+    //         j--;
+    //     }
+    //     if (j === 0) return nums.reverse();
+    //     for (var k = j + 1; k < nums.length; k++) {
+    //         if (nums[k] > nums[i]) break;
+    //     }
+    //     if (nums[k]) { // 如果找的到k
+    //         [nums[i], nums[k]] = [nums[k], nums[i]]
+    //         let reverseArr = nums.splice(j, nums.length).reverse();
+    //         nums = nums.concat(reverseArr)
+    //     } else {
+    //         [nums[i], nums[j]] = [nums[j], nums[i]]
+    //     }
+    //     return nums;
+    // };
+    // const res = nextPermutation([1, 3, 2])
+    // console.log(res);
+
+    const arr = [1, 2, 3, 4, 5];
+
+    function fn(){
+        console.log('a');
+    }
+
+    arr.forEach(e => {
+        queueMicrotask(fn);
+        console.log(e);
+    })
+    // 12345 aaaaa
+
+</script>
+</body>
+</html>
